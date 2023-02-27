@@ -7,8 +7,10 @@ function App() {
 
   useEffect(() => {
     const getApiInfo = async () => {
+      const backendBaseUrl = process.env.REACT_APP_API_BASE_URL;
+      console.log('backendBaseUrl', backendBaseUrl);
       const response = await fetch(
-        `${process.env.REACT_APP_API_BASE_URL}/test`,
+        `${backendBaseUrl}/test`,
         {
           method: "GET",
           headers: {
