@@ -31,7 +31,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>La respuesta de la API es:</p>
+        <p>La respuesta de la API debería ser:</p>
         <p>{apiMessage}</p>
       </header>
     </div>
